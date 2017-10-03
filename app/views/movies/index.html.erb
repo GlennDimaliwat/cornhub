@@ -1,13 +1,11 @@
-<div class="container">
-    <h1>Welcome to CornHub</h1>
-    <p><em>Where Popcorn Meets Movies</em></p>
+<h1>Welcome to CornHub</h1>
+<p><em>Where Popcorn Meets Movies</em></p>
 
-    <%= image_tag "corn.jpg", width: 200 %>
-    <% @movies.each do |movie| %>
-        <h2><%= link_to movie.title, movie %></h2>
-    <% end %>
+<%= image_tag "corn.jpg", width: 200 %>
+<% @movies.each do |movie| %>
+    <h2><%= link_to movie.title, movie %></h2>
+<% end %>
 
-    <nav class="nav">
-        <%= link_to 'Add New Movie', movie_new_path %>
-    </nav>
-</div>
+<nav class="nav">
+    <%= link_to 'Add New Movie', movie_new_path %>
+</nav>

@@ -3,25 +3,4 @@ body {
     text-align: center;
 }
 
-div.container {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-
-    a {
-        text-decoration: none;
-        color: #000000;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
-    nav.buttons {
-        margin-top: 40px;
-        font-size: 20px;
-        a {
-        color: dodgerblue;
-        }
-    }
-}
+@import "./movies"

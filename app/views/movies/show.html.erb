@@ -1,14 +1,12 @@
-<div class="container">
-    <h1><%= @movie.title %></h1>
-    <p><%= @movie.description %></p>
-    <p><strong>Year Released:</strong> <%= @movie.year_released %></p>
-    <p><strong>Genre:</strong> <%= @movie.genre %></p>
+<h1><%= @movie.title %></h1>
+<p><%= @movie.description %></p>
+<p><strong>Year Released:</strong> <%= @movie.year_released %></p>
+<p><strong>Genre:</strong> <%= @movie.genre %></p>
 
-    <nav class="buttons">
-        <%= link_to image_tag("corn.jpg", width: 100), movies_path %><br>
-        <%= link_to 'Edit Movie', movie_edit_path(@movie) %>
-        <%= link_to 'Delete Movie', @movie, method: :delete, data: { confirm: 'Are you sure?' } %>
-        <%= link_to 'Back', movies_path %>
-        
-    </nav>
-</div>
+<nav class="buttons">
+    <%= link_to image_tag("corn.jpg", width: 100), movies_path %><br>
+    <%= link_to 'Back', movies_path %><br>
+    <%= link_to 'Edit Movie', movie_edit_path(@movie) %><br>
+    <%= link_to 'Delete Movie', @movie, method: :delete, data: { confirm: 'Are you sure?' } %>
+    
+</nav>
