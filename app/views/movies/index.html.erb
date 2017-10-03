@@ -4,6 +4,6 @@
 
     <%= image_tag "corn.jpg", width: 200 %>
     <% @movies.each do |movie| %>
-        <h2><%= link_to movie.title, movie_show_path(movie) %></h2>
+        <h2><%= link_to movie.title, movie %></h2>
     <% end %>
 </div>
