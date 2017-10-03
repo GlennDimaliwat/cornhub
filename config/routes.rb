@@ -6,17 +6,17 @@ Rails.application.routes.draw do
   # Index
   get '/movies' => 'movies#index'
   
+  # New
+  get '/movies/new' => 'movies#new'
+  
   # Show
   get '/movies/:id' => 'movies#show', as: 'movie'
-
-  # New
-  get '/movie/new' => 'movies#new'
 
   # Create
   post '/movies' => 'movies#create'
 
   # Edit
-  get '/movie/:id/edit' => 'movies#edit', as: 'movie_edit'
+  get '/movies/:id/edit' => 'movies#edit', as: 'movie_edit'
 
   # Update
   patch '/movies/:id' => 'movies#update'
