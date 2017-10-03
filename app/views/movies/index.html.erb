@@ -6,4 +6,8 @@
     <% @movies.each do |movie| %>
         <h2><%= link_to movie.title, movie %></h2>
     <% end %>
+
+    <nav class="nav">
+        <%= link_to 'Add New Movie', movie_new_path %>
+    </nav>
 </div>

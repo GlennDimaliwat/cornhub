@@ -1,0 +1,26 @@
+<%= form_with(model: movie, local: true) do |form| %>
+
+<div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :title %>
+</div>
+
+<div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :description %>
+</div>
+
+<div class="field">
+    <%= form.label :year_released %>
+    <%= form.text_field :year_released, id: :year_released %>
+</div>
+
+<div class="field">
+    <%= form.label :genre %>
+    <%= form.text_field :genre, id: :genre %>
+</div>
+
+<div class="actions">
+    <%= form.submit %>
+</div>
+<% end %>
